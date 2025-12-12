@@ -73,7 +73,7 @@ Which is better? Reply with ONLY the name of the winner: '{MODEL_NAME}', '{MODEL
 
 print("Judge is deciding....")
 
-judge_response = openrouter.chat.completions.create(model=MODEL_NAME1,
+judge_response = openrouter.chat.completions.create(model="nex-agi/deepseek-v3.1-nex-n1:free",
 messages=[{"role":"user","content":judge_prompt}])
 
 winner = judge_response.choices[0].message.content
